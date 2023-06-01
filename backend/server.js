@@ -21,7 +21,10 @@ app.use(morgan("common"));
 
 //to enable cors
 // in localhost
-app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+//app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+app.use(
+  cors({ credentials: true, origin: "https://frontend-flk4.onrender.com" })
+);
 
 //enable routing
 app.use("/api/maincatg", maincatg);
