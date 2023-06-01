@@ -16,8 +16,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}></Route>
         <Route path="/:id" element ={<Subcatagory/>}></Route>
-
-     
     </Routes>
 
     </BrowserRouter>
